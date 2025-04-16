@@ -14,3 +14,10 @@ jobs:
       - uses: cicirello/generate-sitemap@v1
         with:
           base-url: https://www.femkehulsman.nl
+      - name: Commit sitemap
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add sitemap.xml
+          git commit -m "Add sitemap"
+          git push
