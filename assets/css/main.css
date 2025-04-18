@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #d49337 !important;
+			color: #db9d3a !important;
 		}
 
 	strong, b {
@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #d49337;
+		color: #db9d3a;
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1848,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #d49337;
+			border-color: #db9d3a;
 		}
 
 	select {
@@ -1953,7 +1953,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #d49337;
+			border-color: #db9d3a;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2402,7 +2402,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #d49337;
+				background: #db9d3a;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2618,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #d49337;
+			background-color: #db9d3a;
 			color: #ffffff !important;
 		}
 
@@ -2654,11 +2654,12 @@ input, select, textarea {
 
 	.features article {
 		display: flex;
-		align-items: center;
-		gap: 2em; /* ruimte tussen image en tekst */
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 2em; 
 		border-top: solid 3px #ccc;
 		padding-top: 2.5em;
-		border-bottom: 1px solid #e0e0e0;
+		border-bottom: 3px solid #e0e0e0;
 		padding-bottom: 2.5em;
 		margin-bottom: 2.5em;
 	}
@@ -2668,13 +2669,26 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
+		.features article::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 3px;
+			background-color: #e0e0e0;
+			margin-top: 2.5em;
+		}
+
 		.features article .image {
-			width: 48%;
+			flex: 1 1 200px; /* flexibel: min 300px, groeit mee */
+			max-width: 48%;
 		}
 
 		.features article .image img {
 			width: 100%;
-			height: 200px;
+			height: auto;
+			aspect-ratio: 4 / 3;
 			object-fit: cover;
 			display: block;
 			border-radius: 6px;
@@ -2687,8 +2701,17 @@ input, select, textarea {
 		}
 
 		.features article .inner {
-			width: 50%;
+			flex: 1 1 200px;
+			max-width: 48%;
 		}	
+
+		.features article {
+			background-color: #fafafa;
+			border-radius: 8px;
+			padding-left: 1em;
+			padding-right: 1em;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* zachte schaduw */
+		}
 
 	/*
 	.features article {
@@ -2740,7 +2763,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #d49337;
+		background: #db9d3a;
 		color: #f1dda9;
 		height: 100%;
 		overflow-y: auto;
@@ -2848,7 +2871,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #d49337 !important;
+							color: #db9d3a !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -3116,7 +3139,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #d49337;
+						background: #db9d3a;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3201,7 +3224,7 @@ input, select, textarea {
 				}
 
 		/* Features */
-
+		/*
 			.features article .image {
 				display: block;
 				margin: 0 0 2.25em 0;
@@ -3213,6 +3236,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+		*/
 
 		/* Gallery */
 
