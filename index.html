@@ -21,7 +21,9 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpeg" alt="" /></span>
+					<a href="#" class="image avatar lightbox-trigger">
+						<img src="images/avatar.jpeg" alt="Femke Hulsman" />
+					</a>
 					<h1 id="logo"><a href="#">Femke Hulsman</a></h1>
 					<p>Mezzosopraan
 				</p>
@@ -564,6 +566,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						lightbox.style.display = 'flex';
 					});
 				});
+
+				document.querySelectorAll('.lightbox-trigger img').forEach(img => {
+					img.addEventListener('click', function (e) {
+						e.preventDefault(); // voorkomt springen
+						const lightbox = document.getElementById('lightbox');
+						const lightboxImg = document.getElementById('lightbox-img');
+						lightboxImg.src = this.src;
+						lightbox.style.display = 'flex';
+					});
+				});
+
 				
 				document.querySelector('.lightbox .close').addEventListener('click', function () {
 					document.getElementById('lightbox').style.display = 'none';

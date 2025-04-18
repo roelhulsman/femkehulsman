@@ -3385,6 +3385,7 @@ input, select, textarea {
 		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 	}
 
+	/* Lightbox */
 	.lightbox {
 		display: none;
 		position: fixed;
@@ -3412,5 +3413,19 @@ input, select, textarea {
 		right: 30px;
 		font-size: 40px;
 		color: white;
+		cursor: pointer;
+	}
+
+	/* Avatar */
+	.image img,
+	.avatar {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		border-radius: 6px;
+	}
+
+	.image img:hover,
+	.avatar:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 		cursor: pointer;
 	}
