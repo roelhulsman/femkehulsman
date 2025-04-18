@@ -3416,7 +3416,7 @@ input, select, textarea {
 		column-count: 2;
 		column-gap: 15px;
 		border-top: solid 3px #ccc;
-		border-bottom: 3px solid #e0e0e0;
+		border-bottom: 3px solid #ccc;
 		padding-top: 2.5em;
 		padding-bottom: 2.5em;
 		padding-left: 1em;
@@ -3430,7 +3430,7 @@ input, select, textarea {
 	.features.agenda .image {
 		display: inline-block;
 		width: 100%;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 	}
 	
 	.features.agenda .image img {
@@ -3464,7 +3464,7 @@ input, select, textarea {
 	.features.agenda .inner {
 		display: inline-block;
 		vertical-align: middle;
-		width: 48%;
+		width: 100%;
 	}
 
 	/* Lightbox */
