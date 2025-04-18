@@ -3417,11 +3417,11 @@ input, select, textarea {
 		column-gap: 15px;
 		border-top: solid 3px #ccc;
 		border-bottom: 3px solid #ccc;
-		padding-top: 2.5em;
-		padding-bottom: 2.5em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 		padding-left: 1em;
 		padding-right: 1em;
-		margin-bottom: 2.5em;
+		margin-bottom: 2em;
 		background-color: #fafafa;
 		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* zachte schaduw */
@@ -3450,6 +3450,7 @@ input, select, textarea {
 		padding-top: 0;
 	}
 	
+	/*
 	.features.agenda::after {
 		content: "";
 		position: absolute;
@@ -3458,8 +3459,9 @@ input, select, textarea {
 		bottom: 0;
 		height: 3px;
 		background-color: #e0e0e0;
-		margin-top: 2.5em;
+		margin-top: 2em;
 	}
+	*/
 
 	.features.agenda .inner {
 		display: inline-block;
