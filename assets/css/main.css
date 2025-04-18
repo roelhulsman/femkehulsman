@@ -2996,9 +2996,9 @@ input, select, textarea {
 				max-width: 40%;
 			}
 
-				.image.left img, .image.right img {
+				/*.image.left img, .image.right img {
 					width: 100%;
-				}
+				}8/
 
 			.image.main {
 				height: 20em;
