@@ -2633,7 +2633,7 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #c08a00;
+				background-color: #ce9300;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3174,6 +3174,12 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		/* Gallery */
+
+			.features.gallery {
+				column-count: 1;
+			}
+
 		/* Header */
 
 			#header {
@@ -3313,4 +3319,22 @@ input, select, textarea {
 				padding: 0;
 			}
 
+	}
+
+	/* Gallery */
+	.features.gallery {
+		column-count: 3;
+		column-gap: 15px;
+	}
+
+	.features.gallery .image {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.features.gallery .image img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
 	}
