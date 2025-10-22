@@ -6383,6 +6383,8 @@ input, select, textarea {
 
 			.gallery.style1 a:hover {
 				color: #47D3E5;
+				transform: scale(1.05);
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -6484,7 +6486,7 @@ input, select, textarea {
 		.gallery.style1 article {
 			overflow: hidden;
 			position: relative;
-			width: 25%;
+			width: 100%;
 		}
 
 			.gallery.style1 article .image {
@@ -6492,15 +6494,22 @@ input, select, textarea {
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
-				display: block;
+				display: inline-block;
 				width: 100%;
 				border-radius: 0;
 			}
 
 				.gallery.style1 article .image img {
-					display: block;
+					display: inline-block;
 					width: 100%;
+					height: auto;
 					border-radius: 0;
+					transition: transform 0.3s ease, box-shadow 0.3s ease;
+				}
+
+				.gallery.style1 article .image img:hover{
+					transform: scale(1.05);
+					box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 				}
 
 			.gallery.style1 article .caption {
