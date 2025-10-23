@@ -4351,6 +4351,31 @@ input, select, textarea {
 
 		}
 
+		.banner.style5.invertcolor,
+		.banner.style5.invertcolor .content {
+			color: #fff;
+		}
+		.banner.style5.invertcolor h1,
+		.banner.style5.invertcolor h2,
+		.banner.style5.invertcolor h3,
+		.banner.style5.invertcolor h4,
+		.banner.style5.invertcolor h5,
+		.banner.style5.invertcolor h6,
+		.banner.style5.invertcolor p,
+		.banner.style5.invertcolor a,
+		.banner.style5.invertcolor strong,
+		.banner.style5.invertcolor b {
+			color: #fff;
+		}
+		.banner.style5.invertcolor button,
+		.banner.style5.invertcolor .button,
+		.banner.style5.invertcolor svg,
+		.banner.style5.invertcolor i {
+			color: #fff;
+			border-color: #fff;
+			background: transparent; /* or set a contrasting background */
+		}
+
 		.banner.style5.fullscreen {
 			min-height: 100vh;
 		}
@@ -6364,7 +6389,8 @@ input, select, textarea {
 		/* display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex; */
-		display: block;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		/* -moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap; */
