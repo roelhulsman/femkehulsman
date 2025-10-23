@@ -6380,16 +6380,18 @@ input, select, textarea {
 	.gallery.style1 {
 		background-color: transparent;
 		color: #ffffff;
-		display: grid;
+		/* display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 0;
+		gap: 0; */
+		column-count: 3;
+		column-gap: 1em;
 		position: relative;
 		width: 100%;
 	}
 
 	.gallery.style1 > * {
 		break-inside: avoid;
-		margin-bottom: 0; /* Adjust spacing as needed */
+		margin-bottom: 1em; /* Adjust spacing as needed */
 	}
 
 		.gallery.style1 input, .gallery.style1 select, .gallery.style1 textarea {
@@ -6518,8 +6520,6 @@ input, select, textarea {
 				.gallery.style1 article .image img {
 					display: block;
 					width: 100%;
-					height: auto;
-					object-fit: unset;
 					border-radius: 0;
 					transition: transform 0.3s ease, box-shadow 0.3s ease;
 				}
@@ -6584,11 +6584,11 @@ input, select, textarea {
 			.gallery.style1 article:hover .caption {
 				opacity: 1;
 			}
-/* 
+
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1 article {
-				width: 33.33333%;
+				column-count: 3;
 			}
 
 				.gallery.style1 article .caption {
@@ -6600,7 +6600,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1 article {
-				width: 50%;
+				column-count: 2;
 			}
 
 				.gallery.style1 article .caption {
@@ -6612,7 +6612,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1 article {
-				width: 100%;
+				column-count: 1;
 			}
 
 				.gallery.style1 article .caption {
@@ -6622,7 +6622,7 @@ input, select, textarea {
 		}
 
 		.gallery.style1.small article {
-			width: 20%;
+			column-count: 5;
 		}
 
 			.gallery.style1.small article .caption {
@@ -6632,7 +6632,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1.small article {
-				width: 25%;
+				column-count: 4;
 			}
 
 				.gallery.style1.small article .caption {
@@ -6644,7 +6644,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1.small article {
-				width: 33.33333%;
+				column-count: 3;
 			}
 
 				.gallery.style1.small article .caption {
@@ -6656,7 +6656,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1.small article {
-				width: 50%;
+				column-count: 2;
 			}
 
 				.gallery.style1.small article .caption {
@@ -6666,7 +6666,7 @@ input, select, textarea {
 		}
 
 		.gallery.style1.big article {
-			width: 33.33333%;
+			column-count: 3;
 		}
 
 			.gallery.style1.big article .caption {
@@ -6676,7 +6676,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.gallery.style1.big article {
-				width: 50%;
+				column-count: 2;
 			}
 
 				.gallery.style1.big article .caption {
@@ -6688,7 +6688,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery.style1.big article {
-				width: 50%;
+				column-count: 2;
 			}
 
 				.gallery.style1.big article .caption {
@@ -6700,14 +6700,14 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery.style1.big article {
-				width: 100%;
+				column-count: 1;
 			}
 
 				.gallery.style1.big article .caption {
 					padding: 1rem;
 				}
 
-		} */
+		}
 
 /* Gallery (style2) */
 
