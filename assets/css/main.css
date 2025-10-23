@@ -4299,7 +4299,6 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			border-radius: 0;
-			opacity: 0.5;
 		}
 
 			.banner.style5 .image img {
@@ -6354,20 +6353,22 @@ input, select, textarea {
 /* Gallery (style1) */
 
 	.gallery.style1 {
+		column-count: 3;
+		column-gap: 0;
 		background-color: #000000;
 		color: #ffffff;
-		-moz-align-items: flex-start;
+		/* -moz-align-items: flex-start;
 		-webkit-align-items: flex-start;
-		-ms-align-items: flex-start;
-		align-items: flex-start; /*center */
-		display: -moz-flex;
+		-ms-align-items: flex-start; */
+		align-items: unset; /*center */
+		/* display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
+		display: -ms-flex; */
+		display: block;
+		/* -moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap; */
+		flex-wrap: unset; /*wrap */
 		/* -moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
@@ -6375,6 +6376,11 @@ input, select, textarea {
 		position: relative;
 		width: 100%;
 		background-color: transparent;
+	}
+
+	.gallery.style1 > * {
+		break-inside: avoid;
+		margin-bottom: 0; /* Adjust spacing as needed */
 	}
 
 		.gallery.style1 input, .gallery.style1 select, .gallery.style1 textarea {
@@ -6490,7 +6496,7 @@ input, select, textarea {
 		.gallery.style1 article {
 			overflow: hidden;
 			position: relative;
-			width: 33.3333%;
+			/* width: 33.3333%; */
 		}
 
 			.gallery.style1 article .image {
