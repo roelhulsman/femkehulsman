@@ -4280,6 +4280,8 @@ input, select, textarea {
 			max-width: 100%;
 			margin-bottom: 2rem;
 			z-index: 1;
+			background: transparent;
+			border-radius: 0.5em;
 		}
 
 		.banner.style5 .image {
