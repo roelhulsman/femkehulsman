@@ -6481,7 +6481,7 @@ input, select, textarea {
 			display: none;
 		}
 
-		.gallery.style1 > .inner {
+		/* .gallery.style1 > .inner {
 			-moz-align-items: inherit;
 			-webkit-align-items: inherit;
 			-ms-align-items: inherit;
@@ -6495,7 +6495,7 @@ input, select, textarea {
 			-webkit-justify-content: inherit;
 			-ms-justify-content: inherit;
 			justify-content: inherit;
-		}
+		} */
 
 		.gallery.style1 article {
 			overflow: hidden;
