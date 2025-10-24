@@ -6384,11 +6384,7 @@ input, select, textarea {
 		column-gap: 1em;
 		position: relative;
 		width: 100%;
-	}
-
-	.gallery.style1 > * {
-		break-inside: avoid;
-		margin-bottom: 1em; /* Adjust spacing as needed */
+		display: block;
 	}
 
 		.gallery.style1 input, .gallery.style1 select, .gallery.style1 textarea {
@@ -6485,7 +6481,7 @@ input, select, textarea {
 			display: none;
 		}
 
-		/* .gallery.style1 > .inner {
+		.gallery.style1 > .inner {
 			-moz-align-items: inherit;
 			-webkit-align-items: inherit;
 			-ms-align-items: inherit;
@@ -6499,11 +6495,13 @@ input, select, textarea {
 			-webkit-justify-content: inherit;
 			-ms-justify-content: inherit;
 			justify-content: inherit;
-		} */
+		}
 
 		.gallery.style1 article {
 			overflow: hidden;
 			position: relative;
+			break-inside: avoid;
+			margin-bottom: 1em;
 		}
 
 			.gallery.style1 article .image {
@@ -6534,7 +6532,7 @@ input, select, textarea {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
-				display: flex;
+				display: block;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
