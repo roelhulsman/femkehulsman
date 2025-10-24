@@ -6481,14 +6481,14 @@ input, select, textarea {
 
 		.gallery.style1 > .inner {
 			column-count: 3;
-  			column-gap: 1em;
+  			column-gap: 0;
 			display: block !important;
 		}
 
 		.gallery.style1 > .inner article,
 		.gallery.style1 article {
 			break-inside: avoid;
-			margin-bottom: 1em;
+			margin-bottom: 0;
 		}
 
 			.gallery.style1 article .image {
@@ -6566,130 +6566,70 @@ input, select, textarea {
 			.gallery.style1 article:hover .caption {
 				opacity: 1;
 			}
-/* 
-		@media screen and (max-width: 1280px) {
 
-			.gallery.style1 article {
+		@media screen and (max-width: 1280px) {
+			.gallery.style1 > .inner {
 				column-count: 3;
 			}
-
-				.gallery.style1 article .caption {
-					padding: 1rem;
-				}
-
 		}
 
 		@media screen and (max-width: 980px) {
-
-			.gallery.style1 article {
+			.gallery.style1 > .inner {
 				column-count: 2;
 			}
-
-				.gallery.style1 article .caption {
-					padding: 1rem;
-				}
-
 		}
 
 		@media screen and (max-width: 480px) {
-
-			.gallery.style1 article {
+			.gallery.style1 > .inner {
 				column-count: 1;
 			}
-
-				.gallery.style1 article .caption {
-					padding: 1rem;
-				}
-
 		}
 
-		.gallery.style1.small article {
+		.gallery.style1.small > .inner {
 			column-count: 5;
 		}
 
-			.gallery.style1.small article .caption {
-				padding: 1rem;
-			}
-
 		@media screen and (max-width: 1280px) {
-
-			.gallery.style1.small article {
+			.gallery.style1.small > .inner {
 				column-count: 4;
 			}
-
-				.gallery.style1.small article .caption {
-					padding: 1rem;
-				}
-
 		}
 
 		@media screen and (max-width: 980px) {
-
-			.gallery.style1.small article {
+			.gallery.style1.small > .inner {
 				column-count: 3;
 			}
-
-				.gallery.style1.small article .caption {
-					padding: 1rem;
-				}
-
 		}
 
 		@media screen and (max-width: 480px) {
-
-			.gallery.style1.small article {
+			.gallery.style1.small > .inner {
 				column-count: 2;
 			}
-
-				.gallery.style1.small article .caption {
-					padding: 1rem;
-				}
-
 		}
 
-		.gallery.style1.big article {
+		.gallery.style1.big > .inner {
 			column-count: 3;
 		}
 
-			.gallery.style1.big article .caption {
-				padding: 3rem;
-			}
-
 		@media screen and (max-width: 1280px) {
-
-			.gallery.style1.big article {
+			.gallery.style1.big > .inner {
 				column-count: 2;
 			}
-
-				.gallery.style1.big article .caption {
-					padding: 2rem;
-				}
-
 		}
 
 		@media screen and (max-width: 980px) {
 
-			.gallery.style1.big article {
+			.gallery.style1.big > .inner {
 				column-count: 2;
 			}
-
-				.gallery.style1.big article .caption {
-					padding: 2rem;
-				}
-
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.gallery.style1.big article {
+			.gallery.style1.big > .inner {
 				column-count: 1;
 			}
-
-				.gallery.style1.big article .caption {
-					padding: 1rem;
-				}
-
-		} */
+		}
 
 /* Gallery (style2) */
 
