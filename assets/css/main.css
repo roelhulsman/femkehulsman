@@ -6380,8 +6380,6 @@ input, select, textarea {
 	.gallery.style1 {
 		background-color: transparent;
 		color: #ffffff;
-		column-count: 3;
-		column-gap: 1em;
 		position: relative;
 		width: 100%;
 		display: block;
@@ -6481,25 +6479,14 @@ input, select, textarea {
 			display: none;
 		}
 
-		/* .gallery.style1 > .inner {
-			-moz-align-items: inherit;
-			-webkit-align-items: inherit;
-			-ms-align-items: inherit;
-			align-items: inherit;
-			display: inherit;
-			-moz-flex-wrap: inherit;
-			-webkit-flex-wrap: inherit;
-			-ms-flex-wrap: inherit;
-			flex-wrap: inherit;
-			-moz-justify-content: inherit;
-			-webkit-justify-content: inherit;
-			-ms-justify-content: inherit;
-			justify-content: inherit;
-		} */
+		.gallery.style1 > .inner {
+			column-count: 3;
+  			column-gap: 1em;
+			display: block !important;
+		}
 
+		.gallery.style1 > .inner article,
 		.gallery.style1 article {
-			overflow: hidden;
-			position: relative;
 			break-inside: avoid;
 			margin-bottom: 1em;
 		}
